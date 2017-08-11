@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd"> 
+
+<mapper namespace="admin">
+	
+	<sql id="wherePagging">
+		<if test="firstIndex != null and firstIndex != '' and recordCountPerPage != null and recordCountPerPage != ''">
+			<!-- 
+			WHERE C.ROW BETWEEN #{firstIndex} + 1 AND #{firstIndex} + #{recordCountPerPage}
+			 -->
+			LIMIT ${firstIndex}, ${recordCountPerPage}
+		</if>
+	</sql>
+	
+	<!-- Admin Image 등록 -->
+	<insert id="insertAdminImage" parameterType="TSData">
+	    INSERT INTO HMTB_IMAGE	(	
+												KEYWORD
+    											,TITLE
+												,TEXT
+												,PATH
+												,INDATE
+												,ID
+												,MTYPE
+										
+    										)
+   								VALUES	(
+   								    			#{keyword}
+    											,#{title}
+    											,#{info}
+    											,#{path}
+    											,DATE_FORMAT(NOW(), '%Y%m%d')
+    											,#{id}
+    											,'A'
+   											)
+	</insert>
+	
+	<!-- Admin Image 수정 -->
+	<update id="updateAdminImage" parameterType="TSData">
+		UPDATE HMTB_IMAGE SET 
+			KEYWORD = #{keyword}
+			,TITLE = #{title}
+			,INFO = #{info}
+			,PATH = #{path}
+		WHERE INX = #{inx}
+		AND MTYPE = 'A'
+	</update>
+	
+	<!--Admin Image 리스트 개수 확인 -->
+	<select id="selectAdminImageListCnt" parameterType="TSData" resultType="int">
+	    SELECT COUNT(*)
+	    FROM HMTB_IMAGE T1
+		WHERE 1 = 1
+		AND MTYPE = 'A'
+		<if test="keyword != null and keyword != ''">
+			AND NAME LIKE CONCAT('%', #{keyword}, '%') 
+		</if>	
+	</select>
+	
+	<!-- Admin Image 리스트 조회 -->
+	<select id="selectAdminImageList" parameterType="TSData" resultType="TSData">
+		SELECT * FROM HMTB_IMAGE 
+		WHERE 1 = 1
+		AND MTYPE = 'A'
+		<if test="keyword != null and keyword != ''">
+			AND KEYWORD LIKE CONCAT('%', #{keyword}, '%') 
+		</if>	
+			ORDER BY INX DESC
+		<include refid="wherePagging"/>
+	</select>
+	
+	<!-- Admin Image 조회 (선택한 1개) -->
+	<select id="selectAdminImage" parameterType="TSData" resultType="TSData">
+		SELECT * FROM HMTB_IMAGE 
+		WHERE INX = #{inx}
+		AND MTYPE = 'A'
+		LIMIT 1
+	</select>
+	
+	<!-- Admin Image 수정 -->
+	<update id="updateAdminImageSlideCnt" parameterType="TSData">
+		UPDATE HMTB_IMAGE SET 
+			show_count = show_count + 1
+		WHERE INX = #{INX}
+		AND MTYPE = 'A'
+	</update>
+	
+</mapper>

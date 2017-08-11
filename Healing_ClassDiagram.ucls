@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.8" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
+  realizations="true" associations="true" dependencies="false" nesting-relationships="true">  
+  <class id="1" language="java" name="com.skcj.HealingMuseum.Admin.dto.ImageDTO" project="HealingMuseum_ys_1013" 
+    file="/HealingMuseum_ys_1013/src/main/java/com/skcj/HealingMuseum/Admin/dto/ImageDTO.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="477" width="286" x="148" y="279"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="com.skcj.HealingMuseum.Userimg.command.UImageListCommand" 
+    project="HealingMuseum_ys_1013" 
+    file="/HealingMuseum_ys_1013/src/main/java/com/skcj/HealingMuseum/Userimg/command/UImageListCommand.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3661" y="323"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="com.skcj.HealingMuseum.board.command.MBUpdateFormCommand" 
+    project="HealingMuseum_ys_1013" 
+    file="/HealingMuseum_ys_1013/src/main/java/com/skcj/HealingMuseum/board/command/MBUpdateFormCommand.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="241" y="926"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="com.skcj.HealingMuseum.HomeController" project="HealingMuseum_ys_1013" 
+    file="/HealingMuseum_ys_1013/src/main/java/com/skcj/HealingMuseum/HomeController.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="117" width="154" x="474" y="279"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="com.skcj.HealingMuseum.Admin.command.AImageUpdateCommand" 
+    project="HealingMuseum_ys_1013" 
+    file="/HealingMuseum_ys_1013/src/main/java/com/skcj/HealingMuseum/Admin/command/AImageUpdateCommand.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="905" y="1310"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="com.skcj.HealingMuseum.Member.command.MIdCheckCommand" 
+    project="HealingMuseum_ys_1013" 
+    file="/HealingMuseum_ys_1013/src/main/java/com/skcj/HealingMuseum/Member/command/MIdCheckCommand.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1710" y="929"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="7" language="java" name="com.skcj.HealingMuseum.Member.command.MCommand" 
+    project="HealingMuseum_ys_1013" 
+    file="/HealingMuseum_ys_1013/src/main/java/com/skcj/HealingMuseum/Member/command/MCommand.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2943" y="1623"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="8" language="java" name="com.skcj.HealingMuseum.Member.command.MDeleteCommand" 
+    project="HealingMuseum_ys_1013" 
+    file="/HealingMuseum_ys_1013/src/main/java/com/skcj/HealingMuseum/Member/command/MDeleteCommand.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1947" y="947"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="com.skcj.HealingMuseum.Userimg.command.UImageUploadCommand" 
+    project="HealingMuseum_ys_1013" 
+    file="/HealingMuseum_ys_1013/src/main/java/com/skcj/HealingMuseum/Userimg/command/UImageUploadCommand.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3677" y="1305"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="com.skcj.HealingMuseum.board.command.MBDeleteCommand" 
+    project="HealingMuseum_ys_1013" 
+    file="/HealingMuseum_ys_1013/src/main/java/com/skcj/HealingMuseum/board/command/MBDeleteCommand.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="468" y="926"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="11" language="java" name="com.skcj.HealingMuseum.Admin.command.ACommand" 
+    project="HealingMuseum_ys_1013" 
+    file="/HealingMuseum_ys_1013/src/main/java/com/skcj/HealingMuseum/Admin/command/ACommand.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1545" y="1644"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="12" language="java" name="com.skcj.HealingMuseum.Admin.command.AImageUploadCommand" 
+    project="HealingMuseum_ys_1013" 
+    file="/HealingMuseum_ys_1013/src/main/java/com/skcj/HealingMuseum/Admin/command/AImageUploadCommand.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1135" y="1310"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="com.skcj.HealingMuseum.board.dto.MBoardDTO" project="HealingMuseum_ys_1013" 
+    file="/HealingMuseum_ys_1013/src/main/java/com/skcj/HealingMuseum/board/dto/MBoardDTO.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="477" width="295" x="668" y="279"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="com.skcj.HealingMuseum.Member.command.MUpdateCommand" 
+    project="HealingMuseum_ys_1013" 
+    file="/HealingMuseum_ys_1013/src/main/java/com/skcj/HealingMuseum/Member/command/MUpdateCommand.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2184" y="929"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="com.skcj.HealingMuseum.util.DBManager" project="HealingMuseum_ys_1013" 
+    file="/HealingMuseum_ys_1013/src/main/java/com/skcj/HealingMuseum/util/DBManager.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="207" width="281" x="1003" y="279"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="com.skcj.HealingMuseum.Userimg.dto.UserImageDTO" project="HealingMuseum_ys_1013" 
+    file="/HealingMuseum_ys_1013/src/main/java/com/skcj/HealingMuseum/Userimg/dto/UserImageDTO.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="531" width="340" x="1324" y="279"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="com.skcj.HealingMuseum.board.command.MBoardWriteCommand" 
+    project="HealingMuseum_ys_1013" 
+    file="/HealingMuseum_ys_1013/src/main/java/com/skcj/HealingMuseum/board/command/MBoardWriteCommand.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="695" y="926"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" name="com.skcj.HealingMuseum.board.command.MBoardListCommand" 
+    project="HealingMuseum_ys_1013" 
+    file="/HealingMuseum_ys_1013/src/main/java/com/skcj/HealingMuseum/board/command/MBoardListCommand.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="922" y="926"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="com.skcj.HealingMuseum.board.controller.MBoardController" 
+    project="HealingMuseum_ys_1013" 
+    file="/HealingMuseum_ys_1013/src/main/java/com/skcj/HealingMuseum/board/controller/MBoardController.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1187" y="971"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="com.skcj.HealingMuseum.board.dao.MBoardDAO" project="HealingMuseum_ys_1013" 
+    file="/HealingMuseum_ys_1013/src/main/java/com/skcj/HealingMuseum/board/dao/MBoardDAO.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="297" width="236" x="1704" y="279"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="21" language="java" name="com.skcj.HealingMuseum.Userimg.command.UImageUpdateFormCommand" 
+    project="HealingMuseum_ys_1013" 
+    file="/HealingMuseum_ys_1013/src/main/java/com/skcj/HealingMuseum/Userimg/command/UImageUpdateFormCommand.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3665" y="460"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="22" language="java" name="com.skcj.HealingMuseum.board.command.MBUpdateCommand" 
+    project="HealingMuseum_ys_1013" 
+    file="/HealingMuseum_ys_1013/src/main/java/com/skcj/HealingMuseum/board/command/MBUpdateCommand.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1451" y="926"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="23" language="java" name="com.skcj.HealingMuseum.Admin.command.AImageUpdateFormCommand" 
+    project="HealingMuseum_ys_1013" 
+    file="/HealingMuseum_ys_1013/src/main/java/com/skcj/HealingMuseum/Admin/command/AImageUpdateFormCommand.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1367" y="1292"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="24" language="java" name="com.skcj.HealingMuseum.Admin.controller.AdminController" 
+    project="HealingMuseum_ys_1013" 
+    file="/HealingMuseum_ys_1013/src/main/java/com/skcj/HealingMuseum/Admin/controller/AdminController.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1656" y="1337"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="25" language="java" name="com.skcj.HealingMuseum.Member.dto.MemberDTO" project="HealingMuseum_ys_1013" 
+    file="/HealingMuseum_ys_1013/src/main/java/com/skcj/HealingMuseum/Member/dto/MemberDTO.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="585" width="381" x="1990" y="279"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="26" language="java" name="com.skcj.HealingMuseum.Admin.dao.ImageDAO" project="HealingMuseum_ys_1013" 
+    file="/HealingMuseum_ys_1013/src/main/java/com/skcj/HealingMuseum/Admin/dao/ImageDAO.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="297" width="243" x="2411" y="279"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="27" language="java" name="com.skcj.HealingMuseum.View.command.VFullscreenSlideCommand" 
+    project="HealingMuseum_ys_1013" 
+    file="/HealingMuseum_ys_1013/src/main/java/com/skcj/HealingMuseum/View/command/VFullscreenSlideCommand.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3430" y="1334"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="28" language="java" name="com.skcj.HealingMuseum.Userimg.command.UImageUpdateCommand" 
+    project="HealingMuseum_ys_1013" 
+    file="/HealingMuseum_ys_1013/src/main/java/com/skcj/HealingMuseum/Userimg/command/UImageUpdateCommand.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3667" y="612"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="29" language="java" name="com.skcj.HealingMuseum.View.command.VCommand" project="HealingMuseum_ys_1013" 
+    file="/HealingMuseum_ys_1013/src/main/java/com/skcj/HealingMuseum/View/command/VCommand.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3297" y="1618"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="30" language="java" name="com.skcj.HealingMuseum.Userimg.command.UImageSlideCommand" 
+    project="HealingMuseum_ys_1013" 
+    file="/HealingMuseum_ys_1013/src/main/java/com/skcj/HealingMuseum/Userimg/command/UImageSlideCommand.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3675" y="995"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="31" language="java" name="com.skcj.HealingMuseum.Userimg.command.UCommand" 
+    project="HealingMuseum_ys_1013" 
+    file="/HealingMuseum_ys_1013/src/main/java/com/skcj/HealingMuseum/Userimg/command/UCommand.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3290" y="932"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="32" language="java" name="com.skcj.HealingMuseum.Userimg.dao.UserImageDAO" project="HealingMuseum_ys_1013" 
+    file="/HealingMuseum_ys_1013/src/main/java/com/skcj/HealingMuseum/Userimg/dao/UserImageDAO.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="333" width="320" x="2704" y="279"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="33" language="java" name="com.skcj.HealingMuseum.Admin.command.AImageListCommand" 
+    project="HealingMuseum_ys_1013" 
+    file="/HealingMuseum_ys_1013/src/main/java/com/skcj/HealingMuseum/Admin/command/AImageListCommand.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1944" y="1292"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="34" language="java" name="com.skcj.HealingMuseum.board.command.MBCommand" 
+    project="HealingMuseum_ys_1013" 
+    file="/HealingMuseum_ys_1013/src/main/java/com/skcj/HealingMuseum/board/command/MBCommand.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="233" y="1534"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="35" language="java" name="com.skcj.HealingMuseum.Userimg.command.UImageDeleteCommand" 
+    project="HealingMuseum_ys_1013" 
+    file="/HealingMuseum_ys_1013/src/main/java/com/skcj/HealingMuseum/Userimg/command/UImageDeleteCommand.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3675" y="1135"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="36" language="java" name="com.skcj.HealingMuseum.Admin.command.AMemberListCommand" 
+    project="HealingMuseum_ys_1013" 
+    file="/HealingMuseum_ys_1013/src/main/java/com/skcj/HealingMuseum/Admin/command/AMemberListCommand.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2174" y="1292"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="37" language="java" name="com.skcj.HealingMuseum.Member.command.MJoinCommand" 
+    project="HealingMuseum_ys_1013" 
+    file="/HealingMuseum_ys_1013/src/main/java/com/skcj/HealingMuseum/Member/command/MJoinCommand.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2421" y="929"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="38" language="java" name="com.skcj.HealingMuseum.Member.command.MLoginCommand" 
+    project="HealingMuseum_ys_1013" 
+    file="/HealingMuseum_ys_1013/src/main/java/com/skcj/HealingMuseum/Member/command/MLoginCommand.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2658" y="929"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="39" language="java" name="com.skcj.HealingMuseum.Member.controller.MController" 
+    project="HealingMuseum_ys_1013" 
+    file="/HealingMuseum_ys_1013/src/main/java/com/skcj/HealingMuseum/Member/controller/MController.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="2944" y="1001"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="40" language="java" name="com.skcj.HealingMuseum.View.controller.VController" 
+    project="HealingMuseum_ys_1013" 
+    file="/HealingMuseum_ys_1013/src/main/java/com/skcj/HealingMuseum/View/controller/VController.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3150" y="1352"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="41" language="java" name="com.skcj.HealingMuseum.Member.dao.MemberDAO" project="HealingMuseum_ys_1013" 
+    file="/HealingMuseum_ys_1013/src/main/java/com/skcj/HealingMuseum/Member/dao/MemberDAO.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="369" width="252" x="3074" y="279"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="42" language="java" name="com.skcj.HealingMuseum.Userimg.controller.UserImgController" 
+    project="HealingMuseum_ys_1013" 
+    file="/HealingMuseum_ys_1013/src/main/java/com/skcj/HealingMuseum/Userimg/controller/UserImgController.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="3626" y="823"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <realization id="43">    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="11"/>  
+  </realization>  
+  <association id="44">    
+    <end type="SOURCE" refId="26" navigable="false">      
+      <attribute id="45" name="instance">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="46" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="47">    
+    <end type="SOURCE" refId="41" navigable="false">      
+      <attribute id="48" name="instance">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="49" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="41" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="50">    
+    <end type="SOURCE" refId="28"/>    
+    <end type="TARGET" refId="31"/>  
+  </realization>  
+  <realization id="51">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="31"/>  
+  </realization>  
+  <realization id="52">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="34"/>  
+  </realization>  
+  <realization id="53">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="34"/>  
+  </realization>  
+  <realization id="54">    
+    <end type="SOURCE" refId="35"/>    
+    <end type="TARGET" refId="31"/>  
+  </realization>  
+  <realization id="55">    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="34"/>  
+  </realization>  
+  <realization id="56">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="31"/>  
+  </realization>  
+  <realization id="57">    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="29"/>  
+  </realization>  
+  <realization id="58">    
+    <end type="SOURCE" refId="38"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
+  <realization id="59">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="11"/>  
+  </realization>  
+  <realization id="60">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="34"/>  
+  </realization>  
+  <association id="61">    
+    <end type="SOURCE" refId="40" navigable="false">      
+      <attribute id="62" name="command">        
+        <position height="0" width="0" x="0" y="-2"/>      
+      </attribute>      
+      <multiplicity id="63" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="-2"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="29" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="64">    
+    <end type="SOURCE" refId="19" navigable="false">      
+      <attribute id="65" name="command">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="66" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="34" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="67">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="11"/>  
+  </realization>  
+  <realization id="68">    
+    <end type="SOURCE" refId="30"/>    
+    <end type="TARGET" refId="31"/>  
+  </realization>  
+  <realization id="69">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
+  <realization id="70">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="31"/>  
+  </realization>  
+  <association id="71">    
+    <end type="SOURCE" refId="39" navigable="false">      
+      <attribute id="72" name="command">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="73" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="74">    
+    <end type="SOURCE" refId="37"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
+  <realization id="75">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
+  <association id="76">    
+    <end type="SOURCE" refId="24" navigable="false">      
+      <attribute id="77" name="command">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="78" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="79">    
+    <end type="SOURCE" refId="32" navigable="false">      
+      <attribute id="80" name="instance">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="81" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="32" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="82">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="34"/>  
+  </realization>  
+  <realization id="83">    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="11"/>  
+  </realization>  
+  <realization id="84">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
+  <association id="85">    
+    <end type="SOURCE" refId="42" navigable="false">      
+      <attribute id="86" name="command">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="87" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="31" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="88">    
+    <end type="SOURCE" refId="20" navigable="false">      
+      <attribute id="89" name="instance">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="90" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="20" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="91">    
+    <end type="SOURCE" refId="36"/>    
+    <end type="TARGET" refId="11"/>  
+  </realization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

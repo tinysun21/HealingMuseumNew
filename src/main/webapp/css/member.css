@@ -1,0 +1,112 @@
+ul, ol, li, dl, dd {list-style: none;}
+a { text-decoration: none; }
+a:link{color: black;} 		/*방문한 적이 없는 a링크 */
+a:visited{color: black;} 	/*방문한 적이 있는 a링크 */
+
+body{
+    margin:0;
+    padding:0;
+    font-size:0.75em;
+    /*background: #ddd url(../images/bg.jpg);*/
+    background-color:#fef0dc;
+    background-repeat:repeat-y; 
+    font-family:'나눔고딕', 'NanumGothic', ng;
+}
+
+#wrap{
+    width:971px; /* 각 웹 페이지 크기에 맞게 사이즈 조정 */
+    margin:0 auto;
+    background-color:#fef0dc;
+    background-repeat:repeat-y;    
+    min-height:780px;
+}
+/*
+form{
+	width:520px;
+	margin:0 auto;
+}
+*/
+form fieldset {
+	padding: 0px 0 0px 0px;
+	border: none;
+}
+
+
+form fieldset legend {
+	font-family: "맑은 고딕", "고딕", Arial, Helvetica, sans-serif;
+	font-size: 20px; /* 제목으로 사용되기 때문에 크기를 크게 잡아 줍니다. */
+	border-bottom: 2px solid #882D17; /* 제목 하단 부에 점선을 넣어 제목이라는 것을 표시해 줍니다. */
+	width: 520px; /* 전체 크기를 잡아 줍니다. */
+	padding: 5px 0 5px 0; /* 위와 아래로 여백을 주고 좌우로는 여백을 없애버립니다. 
+                                      여백을 안 주게 되면 밑줄과 너무 붙어버려 보기에 좋지 않습니다. */
+    margin-bottom : 20px;
+}
+form label {
+	
+	width: 140px; /* 전체의 크기를 정의합니다. */
+	float: left; /* 왼쪽으로 이동시킵니다. */
+	margin: 5px 0 10px 20px; /* 마진을 이용해서 상하로 간격을 줍니다. */
+	text-align:left;
+}
+form label a{
+	color:#882d17;
+	font-weight: bold;
+	font-size:1.2em;
+}
+/*
+form input[type=text], input[type=password]  {
+	margin: 5px 0 10px 0;  label과 마찬가지로 여기도 동일하게 상하로 간격을 줍니다. 
+	border: 1px solid #999;  /* input 박스의 테두리 모양을 정의해 줍니다. 
+	background-color: white; /* 배경색을 이용하여 바탕화면 색과 차별을 줍니다. 
+	width:150px;
+}*/
+form input:focus {
+	border: 2px solid #FFB85A !important; /* input 박스의 테두리 모양을 정의해 줍니다. */
+}
+/*
+form input.id, form input.pwd {
+	width: 150px;
+	height: 18px;
+}
+*/
+h2{
+	font-family: "Verdana", "맑은 고딕", "고딕", "Times New Roman", Times, serif;
+	font-size: 30px; 
+	color: #FFB85A;
+	padding-bottom: 15px;
+	text-align: center;
+}
+
+
+.clear{clear:both;}
+
+.submit, .cancel{
+	height: 45px; /* 버튼의 세로 크기를 정의합니다. */
+	width: 180px; /* 버튼의 가로 크기를 정의합니다. */
+	border: 2px solid #FFB85A; /* 버튼의 테두리를 정의합니다. */
+	border-radius: 5px; /* border-radius를 통해 버튼을 둥그렇게 만듭니다. */
+	box-shadow: 3px 3px 2px #ccc; /* box-shadow를 이용해서 그림자를 만듭니다. */
+	font-size: 16px; /* 글꼴 사이즈를 조절합니다. */
+	font-weight: bold;
+	background-repeat: repeat-x;
+	background-position: center center;
+	color: #882d17;
+	margin: 0 10px 0 10px;
+	background-color: #FFB85A;
+	cursor:pointer;
+	
+	-webkit-transition: border 0.3s;
+	-moz-transition: border 0.3s;
+	transition: border 0.3s;
+}
+
+/* 버튼 hover효과 */
+.submit:hover, .cancel:hover, article .btn:hover{
+	border: 1.5px solid #882d17;
+    font-weight: bold;
+}
+
+form #buttons {
+	margin: 30px 0 0 0;
+	text-align: center;	
+}

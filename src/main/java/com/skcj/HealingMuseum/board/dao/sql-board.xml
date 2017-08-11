@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd"> 
+
+<mapper namespace="board">
+	
+	<sql id="wherePagging">
+		<if test="firstIndex != null and firstIndex != '' and recordCountPerPage != null and recordCountPerPage != ''">
+			<!-- 
+			WHERE C.ROW BETWEEN #{firstIndex} + 1 AND #{firstIndex} + #{recordCountPerPage}
+			 -->
+			LIMIT ${firstIndex}, ${recordCountPerPage}
+		</if>
+	</sql>
+	
+	<!-- Board 등록 -->
+	<insert id="insertBoard" parameterType="TSData">
+	    INSERT INTO HMTB_BOARD	(	
+												SUBJECT
+    											,CONTENT
+												,REPLY
+												,REPLYYN
+												,INDATE
+												,ID
+    										)
+   								VALUES	(
+   								    			#{subject}
+    											,#{content}
+    											,''
+    											,'N'
+    											,DATE_FORMAT(NOW(), '%Y%m%d')
+    											,#{id}
+   											)
+	</insert>
+	
+	<!-- Board 수정 -->
+	<update id="updateBoard" parameterType="TSData">
+		UPDATE HMTB_BOARD SET 
+			SUBJECT = #{subject}
+			,CONTENT = #{content}
+		WHERE INX = #{inx}
+	</update>
+	
+	<!--Board 리스트 개수 확인 -->
+	<select id="selectBoardListCnt" parameterType="TSData" resultType="int">
+	    SELECT COUNT(*)
+	    FROM HMTB_BOARD T1
+		WHERE 1 = 1
+		<if test="subject != null and subject != ''">
+			AND SUBJECT LIKE CONCAT('%', #{subject}, '%') 
+		</if>	
+	</select>
+	
+	<!-- Board 리스트 조회 -->
+	<select id="selectBoardList" parameterType="TSData" resultType="TSData">
+		SELECT * FROM HMTB_BOARD 
+		WHERE 1 = 1
+		<if test="subject != null and subject != ''">
+			AND SUBJECT LIKE CONCAT('%', #{subject}, '%') 
+		</if>	
+			ORDER BY INX DESC
+		<include refid="wherePagging"/>
+	</select>
+	
+	<!-- Board 조회 (선택한 1개) -->
+	<select id="selectBoard" parameterType="TSData" resultType="TSData">
+		SELECT * FROM HMTB_BOARD 
+		WHERE INX = #{inx}
+		LIMIT 1
+	</select>
+	
+	<!-- Board 정보 삭제 -->
+	<delete id="deleteBoard" parameterType="int">
+		DELETE FROM HMTB_BOARD 	
+		WHERE INX = #{inx}
+	</delete>
+</mapper>

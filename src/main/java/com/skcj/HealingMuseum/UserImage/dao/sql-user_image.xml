@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd"> 
+
+<mapper namespace="UserImage">
+	
+	<sql id="wherePagging">
+		<if test="firstIndex != null and firstIndex != '' and recordCountPerPage != null and recordCountPerPage != ''">
+			<!-- 
+			WHERE C.ROW BETWEEN #{firstIndex} + 1 AND #{firstIndex} + #{recordCountPerPage}
+			 -->
+			LIMIT ${firstIndex}, ${recordCountPerPage}
+		</if>
+	</sql>
+	
+	<!--USER IMAGE 리스트 개수 확인 -->
+	<select id="selectUserImageListCnt" parameterType="TSData" resultType="int">
+	    SELECT COUNT(*)
+	    FROM HMTB_IMAGE T1
+		WHERE ID = #{id}
+		AND MTYPE = 'U'
+		<if test="keyword != null and keyword != ''">
+			AND KEYWORD LIKE CONCAT('%', #{keyword}, '%') 
+		</if>	
+	</select>
+
+	<!-- USER IMAGE 리스트 조회 -->
+	<select id="selectUserImageList" parameterType="TSData" resultType="TSData">
+		SELECT * FROM HMTB_IMAGE 
+		WHERE ID = #{id}
+		AND MTYPE = 'U'
+		<if test="keyword != null and keyword != ''">
+			AND KEYWORD LIKE CONCAT('%', #{keyword}, '%') 
+		</if>	
+		ORDER BY INX DESC
+		<include refid="wherePagging"/>
+	</select>
+	
+	<!-- Member 회원가입 -->
+	<insert id="insertUserImage" parameterType="TSData">
+    INSERT INTO HMTB_IMAGE	(
+   											KEYWORD
+											,TITLE
+											,CONTENT
+											,PATH
+											,INDATE
+											,ID
+											,MTYPE
+   									)
+  								VALUES	(
+   											#{keyword}
+   											,#{title}
+   											,#{content}
+   											,#{path}
+   											,DATE_FORMAT(NOW(), '%Y%m%d')
+   											,#{id}
+   											,'U'
+  											)
+	</insert>
+	
+	<!-- User Image 정보 수정 -->
+	<update id="updateUserImage" parameterType="TSData">
+		UPDATE HMTB_IMAGE SET 
+			KEYWORD = #{keyword}
+			,TITLE = #{title}
+			,CONTENT = #{content}
+			,PATH = #{path}
+		WHERE ID = #{id}
+		AND INX = #{inx}
+		AND MTYPE = 'U'
+	</update>
+	
+	<!-- User Image 정보 삭제 (물리 삭제)-->
+	<delete id="deleteUserImage" parameterType="TSData">
+		DELETE FROM HMTB_IMAGE	
+		WHERE INX = #{inx}
+		AND MTYPE = 'U'
+	</delete>
+	
+	<!-- User Image 정보 확인 -->
+	<select id="selectUserImage" parameterType="TSData" resultType="TSData">
+		SELECT * FROM HMTB_IMAGE 
+		WHERE INX = #{inx}
+		AND MTYPE = 'U'
+	</select>
+	
+	<!-- User Slide 감상 확인 -->
+	<update id="updateUserImageSlideCnt" parameterType="int">
+		UPDATE HMTB_IMAGE SET 
+			show_count = show_count+1
+		WHERE INX = #{INX}
+		AND MTYPE = 'U'
+	</update>
+	
+</mapper>

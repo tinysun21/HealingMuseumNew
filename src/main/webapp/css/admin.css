@@ -1,0 +1,272 @@
+article {
+	border:solid red 0px;
+	width: 100%;
+	padding-right: 0px;
+	font-size: 1em;
+	line-height: 1.5em; 
+	margin:0 auto;	/* 가운데 정렬 */
+	margin-top: 50px;
+}
+
+.articleWithSub {
+	border:solid blue 0px;
+	positon:absolute !important;
+	width:70% !important;
+	min-height: 750px;
+	margin-left:350px !important;
+	padding:1px 20px 50px 20px !important;
+}
+
+.articleWithSub h2{
+	font-size: 30px; 
+	padding-bottom: 15px;
+	border-bottom: solid 3px #FFB85A; /* 제목 하단 부에 선을 넣어 제목이라는 것을 표시해 줍니다. */	
+}
+
+
+#sub_menu {
+	width: 260px;
+	min-height:530px;
+	float: left;
+	margin: 143px 55px 0 30px;
+	background: #47a3da;
+	top: 0;	
+}
+
+#sub_menu h3 {
+	color: #afdefa;
+	font-size: 1.9em;
+	padding: 20px;
+	margin: 0;
+	font-weight: 300;
+	background: #0d77b6;
+}
+
+#sub_menu a{
+	display: block;
+	color: #fff;
+	font-weight: 300;
+}
+
+
+#sub_menu a:hover{
+	color: #258ecd;
+}
+
+#sub_menu ul {
+	list-style: none;
+	
+	-webkit-margin-before: 0em !important;
+    -webkit-margin-after: 0m !important;
+	-webkit-padding-start: 0px !important;	/* user agent stylesheet 속성 제거 */
+}
+
+
+article table#notice {
+	width: 740px;
+	border-collapse: collapse;
+	border-top: 1px solid #999;
+}
+
+
+
+.memberlist table {
+	border-collapse: collapse;
+    margin-bottom: 3em;
+    width: 100%;
+    background: #fff; 
+}
+
+.memberlist .memberListTop tr td{
+	color:#000 !important;
+	text-decoration: none;
+}
+
+.memberlist .memberListTop tr td a{
+	color:blue !important;
+	text-decoration: none;
+}
+.memberlist .memberListTop tr td a:hover{
+	color:#fe9203 !important;
+}
+.memberlist .memberListTop tr td a:visited{
+	color: blue;
+}
+
+.memberlist td, .memberlist th {
+	text-align:center;
+    padding: 0.75em 1.5em;
+    /*text-align: left;*/
+
+}
+.memberlist td.err {
+	background-color: #e992b9;
+	color: #fff;
+	font-size: 0.75em;
+	text-align: center;
+	line-height: 1;
+}
+	
+.memberlist th{
+    background-color: #31bc86;
+    font-weight: bold;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.memberlist tbody th {
+	background-color: #2ea879;
+}
+.memberlist tbody tr:nth-child(2n-1){
+    background-color: #f5f5f5;
+    transition: all .125s ease-in-out;
+}
+.memberlist tbody tr:hover {
+    background-color: rgba(129,208,177,.3);
+}
+
+#memberTitle td{
+	color: #000 !important;
+}
+
+#memberTitle:hover{
+	background-color: #fff !important;
+}
+
+
+article .listBtn{
+	width:100px;
+	height:30px;
+	background:#ffb85a;
+	color:#fff;
+	border:solid orange 2px;
+	border-radius:3px;
+	
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+article .listBtn:hover{
+	color:#882d17;
+	font-weight:bold;
+	background:orange;
+}
+
+
+
+/* 이미지 등록 */
+#upload_table td{ 
+	padding: 10px 20px;
+	text-align: left;
+}
+
+table#upload_table, #mb_write_table{
+
+	border:solid 0px blue;
+	margin: 0 auto;
+}
+.imageUpload th {
+	width:100px;
+ 	background-color: coral !important;
+ 	text-align: center;
+}
+
+.imageUpload td{ 
+	background-color: wheat;
+	padding: 8px 5px;
+	
+}
+
+.adminBtn{
+	height: 45px; /* 버튼의 세로 크기를 정의합니다. */
+	width: 180px; /* 버튼의 가로 크기를 정의합니다. */
+	border: none !important; /* 버튼의 테두리를 정의합니다. */
+	border-radius: 5px; /* border-radius를 통해 버튼을 둥그렇게 만듭니다. */
+	font-size: 16px; /* 글꼴 사이즈를 조절합니다. */
+	font-weight: bold;
+	margin: 0 10px 0 10px;
+	color: #882d17;
+	background-color: #FFB85A;
+	cursor:pointer;
+	
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+/* 버튼 hover효과 */
+.adminBtn:hover{
+	background: coral;
+	border : none;
+	color: #882d17;
+    font-weight: bold;
+}
+
+#buttonGroup{
+	border:solid yellow 0px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+
+
+
+/* 결과화면 */
+#result_div{
+	min-height:400px;
+	text-align: center;
+	padding:15px 0 0 0;
+	margin: 99px 0 0 0;
+}
+#result_message h3{
+	margin:20px 0 0 0;
+	font-size: 18px; 
+	color: #fff;
+}
+
+
+
+/* 마이페이지 */
+.mypageForm legend{
+	padding: 0px 0 5px 0; /* 위와 아래로 여백을 주고 좌우로는 여백을 없애버립니다. */
+    margin-bottom : 20px;
+}
+
+.mypageForm fieldset{
+	border: solid white 2px;
+	width:500px;
+	height: 350px;
+	margin:0 auto;
+}
+
+
+.mypageForm label {
+	border: solid red 0px;
+	width: 140px; /* 전체의 크기를 정의합니다. */
+	float: left; /* 왼쪽으로 이동시킵니다. */
+	text-align:left;
+	margin-left:10px;
+}
+.mypageForm label a{
+	color:#882d17;
+	font-weight: bold;
+	font-size:1.2em;
+}
+
+.mypageForm input[type=text], .mypageForm input[type=password]  {
+	margin-bottom: 20px; /* 마진을 이용해서 상하로 간격을 줍니다. */
+	border: 1px solid #999;  /* input 박스의 테두리 모양을 정의해 줍니다. */
+	background-color: white; /* 배경색을 이용하여 바탕화면 색과 차별을 줍니다. */
+	width:200px;
+	border: solid blue 1px;
+}
+.mypageForm input:focus {
+	border: 2px solid #FFB85A !important; /* input 박스의 테두리 모양을 정의해 줍니다. */
+}
+
+.mypageForm input.id, .mypageForm input.pwd {
+	width: 200px;
+	height: 18px;
+	border: solid yellow 1px;
+}

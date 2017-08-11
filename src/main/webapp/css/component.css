@@ -1,0 +1,479 @@
+/* General styles for the modal */
+
+/* 
+Styles for the html/body for special modal where we want 3d effects
+Note that we need a container wrapping all content on the page for the 
+perspective effects (not including the modals and the overlay).
+*/
+
+.md-perspective,
+.md-perspective body {
+	height: 100%;
+	overflow: hidden;
+}
+
+.md-perspective body  {
+	background: #222;
+	-webkit-perspective: 600px;
+	-moz-perspective: 600px;
+	perspective: 600px;
+}
+
+.container {
+	background:#000000; /*	#e74c3c;	*/
+	min-height: 100%;
+}
+
+.md-modal {
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	position: fixed;
+	top: 35%;
+	left: 50%; 
+	margin-left:62px; /* default 318 */
+	width: 50%;
+	max-width: 630px;
+	min-width: 320px;
+	height: auto;
+	z-index: 2000;
+	visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.md-show {
+	visibility: visible;
+}
+
+.md-overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	opacity: 0;
+	/* 백그라운드 흐려지는 코드 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+	/* background:rgba(143,27,15,0.8); */
+	background:rgba(0,0,0,0.6);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.md-show ~ .md-overlay {
+	opacity: 1;
+	visibility: visible;
+}
+
+/* Content styles */
+.md-content {
+	width:500px;
+	top:48px;
+	text-align:right;
+	color: #fff;
+	background: #e74c3c;
+	position: relative;
+	border-radius: 3px;
+	/*padding-top:10px;*/
+	z-index:0;
+}
+.md-head {
+	padding-top:24px;
+	margin:0 !important; 
+	text-align: right;
+	top:0;
+	float: right;
+}
+.md-content h3 {
+	margin: 0;
+	padding:0px 0px 15px 0px;
+/*	padding: 0.4em;*/
+	width:100%;
+	text-align: center;
+	font-size: 2.4em;
+	font-weight: 300;
+	opacity: 0.8;
+	border-radius: 3px 3px 0 0;
+	display:block;
+}
+#common-popup{
+	border: solid;
+}
+#common-popup h3{
+	padding: 10px;
+	background:rgba(0,0,0,0.1);
+}
+#common-popup p{
+	padding: 20px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+#common-popup button{
+	margin-bottom: 20px;
+}
+#md-close-x {
+	font-size:23px;
+	background:#e74c3c;
+	display:block;
+	position:absolute;
+	margin:0px 10px 10px 10px;
+	padding:6px 8px 8px 8px;
+	left:100%;
+	margin-left:-43px;
+	top:4px;
+}
+.md-content-2 {	margin:0 auto; text-align: center; padding-top: 100px; height:215px;}
+
+.md-content-2 input {
+	margin:0px 120px 1px 0px;
+	float:right;
+	width:48%;
+	
+	border: none;
+    padding: 4px;
+    border-radius: 3px;
+}
+.md-content-3 {	 display:inline;}
+
+.md-content > div {
+	width:100%;
+	/*padding: 15px 40px 30px;*/
+	margin: 0 auto;
+	font-weight: 300;
+	font-size: 1.15em;
+	text-align: center;
+}
+
+
+
+.md-content > div p {
+	margin: 0;
+	padding: 10px 0;
+}
+
+.md-content-3 > ul {
+	
+	width:85%;
+	margin-left:40px;
+	/*
+	margin: 0;
+	padding: 0 0 30px 20px;
+	*/
+}
+
+.md-content-3 > ul li {
+	padding: 8px 0;
+	text-align: right;
+}
+.md-content-3 > ul strong {
+	margin-right: 10px;
+}
+
+.md-login {
+	text-align: center;
+	padding-bottom: 20px;
+	margin:0 auto;
+}
+/*
+.md-login button {  default css 폴더
+	
+	display:block;
+	font-size: 0.8em;
+	text-align: center;
+	margin: 0 auto;
+}*/
+
+/* Individual modal styles with animations/transitions */
+
+
+/* Effect 1: Fade in and scale up 
+** Common Alert Popup
+*/
+.md-show.md-effect-1{
+	z-index: 9999;
+}
+.md-show.md-effect-1 ~ .md-overlay {
+	background: rgba(0,0,0,0.75);
+}
+.md-effect-1 .md-content {
+	-webkit-transform: scale(0.7);
+	-moz-transform: scale(0.7);
+	-ms-transform: scale(0.7);
+	transform: scale(0.7);
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.md-show.md-effect-1 .md-content {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+}
+
+/* Effect 11: Super scaled
+** Common Confirm PopUp
+*/
+.md-show.md-effect-11{
+	z-index: 9999;
+}
+
+.md-effect-11 .md-content {
+	-webkit-transform: scale(2);
+	-moz-transform: scale(2);
+	-ms-transform: scale(2);
+	transform: scale(2);
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.md-show.md-effect-11 .md-content {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+}
+
+/* Effect 7:  slide and stick to top 
+** Login Pop
+*/
+.md-effect-7 {
+	top: 0;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.md-effect-7 .md-content {
+	-webkit-transform: translateY(-200%);
+	-moz-transform: translateY(-200%);
+	-ms-transform: translateY(-200%);
+	transform: translateY(-200%);
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+	opacity: 0;
+}
+
+.md-show.md-effect-7 .md-content {
+	-webkit-transform: translateY(0%);
+	-moz-transform: translateY(0%);
+	-ms-transform: translateY(0%);
+	transform: translateY(0%);
+	border-radius: 0 0 3px 3px;
+	opacity: 1;
+}
+
+/* Effect 16:  Blur 
+** SignIn Pop
+*/
+.md-effect-16 {
+	top: 25%;
+}
+
+.md-show.md-effect-16 ~ .md-overlay {
+	/*background: rgba(180,46,32,0.5);*/
+}
+
+.md-show.md-effect-16 ~ .container {
+	-webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	filter: blur(3px);
+}
+
+.md-effect-16 .md-content {
+	-webkit-transform: translateY(-5%);
+	-moz-transform: translateY(-5%);
+	-ms-transform: translateY(-5%);
+	transform: translateY(-5%);
+	opacity: 0;
+}
+
+.md-show.md-effect-16 ~ .container,
+.md-effect-16 .md-content {
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.md-show.md-effect-16 .md-content {
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	-ms-transform: translateY(0);
+	transform: translateY(0);
+	opacity: 1;
+}
+
+@-webkit-keyframes OpenTop {
+	50% { 
+		-webkit-transform: rotateX(10deg); 
+		-webkit-animation-timing-function: ease-out; 
+	}
+}
+
+@-moz-keyframes OpenTop {
+	50% { 
+		-moz-transform: rotateX(10deg); 
+		-moz-animation-timing-function: ease-out; 
+	}
+}
+
+@keyframes OpenTop {
+	50% { 
+		transform: rotateX(10deg); 
+		animation-timing-function: ease-out; 
+	}
+}
+
+@media screen and (max-width: 32em) {
+	body { font-size: 75%; }
+}
+
+
+
+
+
+
+.ex1 h3{
+	padding-top:24px;
+}
+
+/*
+.ex1{
+	width:600px !important; 
+	top:28px;
+	text-align:left !important;
+	color: #fff;
+	background: #e74c3c;
+	position: relative;
+	border-radius: 3px;
+	padding-top:10px;
+	z-index:0;
+}
+
+.ex2 {
+	font-size:100px !important;
+	background:#e74c3c;
+	display:block;
+	position:absolute;
+	margin:10px;
+	padding:8px 8px 8px 8px;
+	left:100%;
+	margin-left:-43px;
+	top:5px;
+}
+.md-content-2 {	margin:0 auto; text-align: center; padding-top: 90px; height:240px;}
+
+.md-content-2 input {
+	margin:0px 120px 1px 0px;
+	padding:0px;
+	float:right; 
+	width:50%;
+}
+.md-content-3 {	width:80%; display:inline;}
+
+.md-content > div {
+	width:100%;
+	/*padding: 15px 40px 30px;
+	margin: 0 auto;
+	font-weight: 300;
+	font-size: 1.15em;
+	text-align: center;
+}
+*/
+
+.dup {
+	height: 30px; /* 버튼의 세로 크기를 정의합니다. */
+	width: 90px; /* 버튼의 가로 크기를 정의합니다. */
+	border: none !important; /* 버튼의 테두리를 정의합니다. */
+	border-radius: 5px; /* border-radius를 통해 버튼을 둥그렇게 만듭니다. */
+	font-size: 16px; /* 글꼴 사이즈를 조절합니다. */
+	font-weight: bold;
+	margin-top:3px;
+	color: #882d17;
+	background-color: #FFB85A;
+	cursor:pointer;
+	
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.dup:hover{
+	background: coral;
+	border : none;
+	color: #882d17;
+    font-weight: bold;
+	
+}
+.join_view form{
+	width:420px;
+	margin:0 auto;
+	height:260px;
+	padding-top: 10px;
+}
+.join_view form ul {
+	padding:0;
+	margin:0;
+	float:left;
+}
+.join_view form label {
+	width: 140px; /* 전체의 크기를 정의합니다. */
+	float: left; /* 왼쪽으로 이동시킵니다. */
+	margin: 5px 0 10px 0px; /* 마진을 이용해서 상하로 간격을 줍니다. */
+	text-align:left;
+}
+
+.join_view form input[type=text], .join_view input[type=password]  {
+	margin: 5px 0 10px 0; /* label과 마찬가지로 여기도 동일하게 상하로 간격을 줍니다. */
+	border: 1px solid #999;  /* input 박스의 테두리 모양을 정의해 줍니다. */
+	background-color: white; /* 배경색을 이용하여 바탕화면 색과 차별을 줍니다. */
+	width:150px;
+}
+/*
+.join_view form input:focus {
+	border: 2px solid #FFB85A !important; /* input 박스의 테두리 모양을 정의해 줍니다. */
+}
+*/
+.join_view form input.id, form input.pw {
+	width: 150px;
+	height: 18px;
+}
+
+.join_view h2{
+	font-family: "Verdana", "맑은 고딕", "고딕", "Times New Roman", Times, serif;
+	font-size: 30px; 
+	color: #FFB85A;
+	padding-bottom: 15px;
+	text-align: center;
+}
+
+.md-sign-in button {
+	display:inline;
+	margin-bottom: 30px;
+/*	
+	padding: 0.6em 1.2em;
+	background: #c0392b;
+	color: #fff;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	font-size: 1em;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	cursor: pointer;
+	display: inline-block;
+	margin: 3px 2px;
+	border-radius: 2px; */
+}

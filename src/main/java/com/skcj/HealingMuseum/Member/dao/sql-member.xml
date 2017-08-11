@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN" "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd"> 
+
+<mapper namespace="member">
+	
+	<sql id="wherePagging">
+		<if test="firstIndex != null and firstIndex != '' and recordCountPerPage != null and recordCountPerPage != ''">
+			<!-- 
+			WHERE C.ROW BETWEEN #{firstIndex} + 1 AND #{firstIndex} + #{recordCountPerPage}
+			 -->
+			LIMIT ${firstIndex}, ${recordCountPerPage}
+		</if>
+	</sql>
+	
+	<!--Member 리스트 개수 확인 -->
+	<select id="selectMemberListCnt" parameterType="TSData" resultType="int">
+	    SELECT COUNT(*)
+	    FROM HMTB_MEMBER T1
+		WHERE 1 = 1
+		<if test="id != null and id != ''">
+			AND ID LIKE CONCAT('%', #{id}, '%') 
+		</if>	
+	</select>
+	
+	<!-- Member 리스트 조회 -->
+	<select id="selectMemberList" parameterType="TSData" resultType="TSData">
+		SELECT * FROM HMTB_MEMBER 
+		WHERE 1 = 1
+		<if test="id != null and id != ''">
+			AND ID LIKE CONCAT('%', #{id}, '%') 
+		</if>	
+		ORDER BY rdate DESC
+		<include refid="wherePagging"/>
+	</select>
+	
+	<!-- Member 회원가입 -->
+	<insert id="insertMember" parameterType="TSData">
+    INSERT INTO HMTB_MEMBER	(
+   											ID
+											,PW
+											,GENDER
+											,EMAIL
+											,RDATE
+											,MTYPE
+   									)
+  								VALUES	(
+   											#{id}
+   											,#{pw}
+   											,#{gender}
+   											,#{email}
+   											,DATE_FORMAT(NOW(), '%Y%m%d')
+   											,0
+  											)
+	</insert>
+	
+	<!-- Member 정보 수정 -->
+	<update id="updateMember" parameterType="TSData">
+		UPDATE HMTB_MEMBER SET 
+			PW = #{pw}
+			,GENDER = #{gender}
+			,EMAIL = #{email}
+		WHERE ID = #{id}
+	</update>
+	
+	<!-- Member 정보 삭제 (물리 삭제)-->
+	<delete id="deleteMember" parameterType="TSData">
+		DELETE FROM HMTB_MEMBER	
+		WHERE id = #{id}
+	</delete>
+	
+	<!-- Member 정보 확인 -->
+	<select id="selectMember" parameterType="TSData" resultType="TSData">
+		SELECT * FROM HMTB_MEMBER 
+		WHERE ID = #{id}
+	</select>
+	
+	<!-- Member Login -->
+	<update id="updateMemberLogin" parameterType="TSData">
+		UPDATE HMTB_MEMBER SET 
+			LAST_LOGIN = DATE_FORMAT(NOW(), '%Y%m%d')
+			,LOGIN_COUNT = LOGIN_COUNT+1
+		WHERE ID = #{ID}
+	</update>
+	
+</mapper>
