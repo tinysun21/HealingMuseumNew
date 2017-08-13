@@ -117,29 +117,29 @@
 					
 					
 					<ul>
-						<label>아이디</label> 
+						<label><spring:message code='web.jsp.header.id'/></label> 
 							<input type="text" name="id" size="12" onblur="id_trim(this.value)" onkeydown="fn_press_han(this);"style="ime-mode: disabled;"> 
 							<input type="hidden" name="reid"> 
 					</ul>
-							<input type="button" value="중복 확인" class="dup" onclick="idcheck()">
+							<input type="button" value="<spring:message code='web.jsp.header.id.check'/>" class="dup" onclick="idcheck()">
 					
 					<ul>
-						<label>비밀번호</label> 
+						<label><spring:message code='web.jsp.header.password'/></label> 
 							<input	type="password" name="pw">
 					</ul>
 					<ul>
-							<label>비밀번호 확인</label>
+							<label><spring:message code='web.jsp.header.password.check'/></label>
 							<input type="password" name="pwCheck">
 					</ul>
 					<ul>
-						<label>성별</label>
-							<input type="radio" name="gender" value="M" checked>남 
-							<input	type="radio" name="gender" value="W">여
-							<input type="radio" name="gender" value="E" >기타
+						<label><spring:message code='web.jsp.header.gender'/></label>
+							<input type="radio" name="gender" value="M" checked><spring:message code='web.jsp.header.gender.men'/> 
+							<input	type="radio" name="gender" value="W"><spring:message code='web.jsp.header.gender.women'/> 
+							<input type="radio" name="gender" value="E" ><spring:message code='web.jsp.header.gender.etc'/> 
 					</ul>
 					
 					<ul>
-						<label>E-Mail</label> 
+						<label><spring:message code='web.jsp.header.gender.email'/></label> 
 							<input type="text" name="email" onkeydown="fn_press_han(this);" style="ime-mode: disabled; width:240px;">
 					</ul>
 		
@@ -150,7 +150,7 @@
 					</form>
 					
 					<div class="md-sign-in">
-							<button onclick="go_save_member(1)">회원가입</button>
+							<button onclick="go_save_member(1)"><spring:message code='web.jsp.header.signup'/></button>
 	<!-- <input type="button" value="회원가입" class="submit" onclick="go_save_member(1)"> --> 
 						</div>
 					
@@ -165,15 +165,17 @@
             	<div class="left">
             		<img src="images/home_icon.png" style="max-height:35px;" alt="home" onclick="location.href='index.do'"/>
             		<div class="lang">
+            		<form id="loginLocaleForm" name="loginLocaleForm" action="" method="post">
 						<p>
 							<span style="vertical-align: middle;">LANGUAGE </span>
 							<select id="locale" name="locale" style="width:150px;" onchange="chang_lang();">
-								<option value="ko" <c:if test="${sessionScope.locale == 'ko'}">selected</c:if>><spring:message code='web.jsp.text.lang.kr'/></option>
-								<option value="ja" <c:if test="${sessionScope.locale == 'ja'}">selected</c:if>><spring:message code='web.jsp.text.lang.ja'/></option>
-								<option value="en" <c:if test="${sessionScope.locale == 'en'}">selected</c:if>><spring:message code='web.jsp.text.lang.en'/></option>
+								<option value="ko" <c:if test="${sessionScope.locale == 'ko'}">selected</c:if>><spring:message code='web.jsp.header.lang.ko'/></option>
+								<option value="ja" <c:if test="${sessionScope.locale == 'ja'}">selected</c:if>><spring:message code='web.jsp.header.lang.ja'/></option>
+								<option value="en" <c:if test="${sessionScope.locale == 'en'}">selected</c:if>><spring:message code='web.jsp.header.lang.en'/></option>
 							</select>
 						</p>
-					</div>
+					</form>
+					</div>	
             	</div>
                 <div class="right">
                	<c:choose>
@@ -181,7 +183,7 @@
 					
 						<c:if test="${memberDTO.MTYPE==0}">
 							<li style="color:#ABABAB; display:inline; margin-right: 10px;">
-						    ${memberDTO.ID}님 환영합니다.
+						    ${memberDTO.ID}
 						    </li>
 						    <button onclick="logout()">LOGOUT</button>  
 						   	<button onclick="location.href='user_image_list.do'">My page</button>	
@@ -190,7 +192,7 @@
 						
 						<c:if test="${memberDTO.MTYPE==1}">
 							<li style="color:#ABABAB; display:inline; margin-right: 10px;">
-						    ${memberDTO.ID}관리자님 환영합니다.
+						    ${memberDTO.ID}
 						    </li>
 						    <button onclick="location.href='logout.do'">LOGOUT</button>  
 						   	<button onclick="location.href='admin_member_list.do'">My page</button>	
@@ -200,8 +202,8 @@
  
                		
 				    <c:otherwise>
-					   	<button id="login" class="md-trigger"  data-modal="modal-7">로그인</button>
-               			<button class="md-trigger" data-modal="modal-16">회원가입</button>
+					   	<button id="login" class="md-trigger"  data-modal="modal-7"><spring:message code='web.jsp.header.login'/></button>
+               			<button class="md-trigger" data-modal="modal-16"><spring:message code='web.jsp.header.signup'/></button>
 				    </c:otherwise>       
 				</c:choose>
                 </div>
@@ -228,17 +230,17 @@
 			// 아이디 중복 체크
 			function idcheck() {
 				if (document.formm.id.value == "") {
-					showAlert('아이디를 입력해 주세요.');
+					showAlert("<spring:message code='web.jsp.hearder.alert.noid'/>");
 					document.formm.id.focus();
 					return false;
 				}
 				if (document.formm.id.value.length < 4) {
-					showAlert("아이디를 4자 이상으로 입력해주세용 ^^");
+					showAlert("<spring:message code='web.jsp.hearder.alert.idcheck.short'/>");
 					document.formm.id.focus();
 					return false;
 				}
 				if (document.formm.id.value.length > 20) {
-					showAlert("아이디를 20자 이하로 입력해주세용 ^^");
+					showAlert("<spring:message code='web.jsp.hearder.alert.idcheck.long'/>");
 					document.formm.id.focus();
 					return false;
 				}
@@ -251,13 +253,13 @@
 			// 로그인 유효성체크
 			function login_check() {
 				if (document.login_frm.id.value.length == 0) {
-					showAlert("아이디를 입력하라우");
+					showAlert("<spring:message code='web.jsp.hearder.alert.noid'/>");
 					document.login_frm.id.focus();
 					
 					return false;
 				}
 				if (document.login_frm.pw.value == "") {
-					showAlert("비밀번호 날래 넣으라우");
+					showAlert("<spring:message code='web.jsp.hearder.alert.login.nopw'/>");
 					document.login_frm.pw.focus();
 					
 					return false;
@@ -295,9 +297,15 @@
 			
 			// 로그인 유효성체크
 			function logout() {
-				showConfirm("로그아웃 하시겠습니까?", function(){
+				showConfirm("<spring:message code='web.jsp.hearder.alert.logout'/>", function(){
 					location.href='logout.do';
 				});
+			}
+			
+			// 언어 변경
+			function chang_lang(){
+				$("#loginLocaleForm").attr('action','<c:url value="/setChangeLocale.do"/>');
+				$("#loginLocaleForm").submit();
 			}
 		</script>
 		<script src="js/login_view/cssParser.js"></script>

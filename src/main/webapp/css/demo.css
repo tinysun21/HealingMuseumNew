@@ -68,6 +68,8 @@ h1 span{
 	display: inline-block;
 	vertical-align: top;
 	margin-top: 4px;
+	float: right;
+    margin-left: 10px;
 }
 .header div.right{
 	float: right;

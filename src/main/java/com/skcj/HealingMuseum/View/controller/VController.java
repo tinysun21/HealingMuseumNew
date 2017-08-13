@@ -24,13 +24,6 @@ public class VController {
 	
 	@Resource(name="Admin/Service")
 	private AdminService adminService;
-
-	@RequestMapping("/index.do")
-	public String Index(Model model) {
-		logger.debug("CALL:: index.do");	
-		
-		return "index";
-	}
 	
 	@RequestMapping("/fullscreen_page.do")
 	public String FullscreenPage(Model model) {
